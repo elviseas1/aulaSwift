@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,55 +12,349 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YLc-Pu-Rv7">
-                                <rect key="frame" x="0.0" y="33" width="414" height="872"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YLc-Pu-Rv7">
+                                <rect key="frame" x="0.0" y="7.5" width="320" height="553"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8m-gk-OGp" userLabel="retangulo">
-                                <rect key="frame" x="0.0" y="33" width="414" height="863"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8m-gk-OGp" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="10.5" width="320" height="547"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Iln-VV-D08">
-                                        <rect key="frame" x="87" y="76" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Iln-VV-D08">
+                                        <rect key="frame" x="40" y="75.5" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="6vC-DC-4eJ"/>
+                                            <constraint firstAttribute="height" constant="128" id="WeY-on-7xh"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-7b-cPa">
-                                        <rect key="frame" x="188" y="220" width="38" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-7b-cPa">
+                                        <rect key="frame" x="141" y="220" width="38" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.99668520689999995" green="0.96538192030000003" blue="0.234970659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descubra qual a cidade apartir  da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gip-JR-Nch">
-                                        <rect key="frame" x="60" y="360" width="295" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir  da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gip-JR-Nch">
+                                        <rect key="frame" x="-3.5" y="235.5" width="327" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gip-JR-Nch" secondAttribute="height" multiplier="327:76" id="agl-ge-q8d"/>
+                                            <constraint firstAttribute="height" constant="76" id="mpZ-qf-beg"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.99668520689999995" green="0.96538192030000003" blue="0.234970659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bst-nd-szK" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="736" width="398" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.16319587830000001" green="0.2888260782" blue="0.34510689970000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bst-nd-szK" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="433" width="398" height="58"/>
+                                        <color key="backgroundColor" red="0.16319587830000001" green="0.2888260782" blue="0.34510689970000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="Sev-mR-5qZ"/>
+                                            <constraint firstAttribute="width" secondItem="Bst-nd-szK" secondAttribute="height" multiplier="199:29" id="pI8-HI-79X"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Jogar">
-                                            <color key="titleColor" red="0.99668520689999995" green="0.96538192030000003" blue="0.234970659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="JOGAR">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="J9h-5M-swM" kind="show" id="uB5-xn-eMd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gip-JR-Nch" firstAttribute="centerX" secondItem="E8m-gk-OGp" secondAttribute="centerX" id="3s1-gw-Qfx"/>
+                                    <constraint firstItem="bd9-7b-cPa" firstAttribute="centerX" secondItem="E8m-gk-OGp" secondAttribute="centerX" id="CI4-y4-niW"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bst-nd-szK" secondAttribute="bottom" constant="56" id="JDE-wA-l2L"/>
+                                    <constraint firstItem="bd9-7b-cPa" firstAttribute="top" secondItem="Iln-VV-D08" secondAttribute="bottom" constant="16.666666666666686" id="PV3-gp-anw"/>
+                                    <constraint firstItem="Bst-nd-szK" firstAttribute="leading" secondItem="E8m-gk-OGp" secondAttribute="leading" constant="8" id="V3m-wD-OlV"/>
+                                    <constraint firstItem="gip-JR-Nch" firstAttribute="centerY" secondItem="E8m-gk-OGp" secondAttribute="centerY" id="dFt-2w-OwE"/>
+                                    <constraint firstItem="Bst-nd-szK" firstAttribute="leading" secondItem="E8m-gk-OGp" secondAttribute="leadingMargin" id="hcq-e9-ikQ"/>
+                                    <constraint firstItem="Iln-VV-D08" firstAttribute="top" secondItem="E8m-gk-OGp" secondAttribute="top" constant="75.333333333333314" id="stS-GI-6jq"/>
+                                    <constraint firstItem="Iln-VV-D08" firstAttribute="centerX" secondItem="E8m-gk-OGp" secondAttribute="centerX" id="tC1-N1-hRY"/>
+                                    <constraint firstItem="Bst-nd-szK" firstAttribute="centerX" secondItem="E8m-gk-OGp" secondAttribute="centerX" id="u9P-fM-9V3"/>
+                                    <constraint firstItem="gip-JR-Nch" firstAttribute="centerX" secondItem="E8m-gk-OGp" secondAttribute="centerX" id="uHA-FZ-kFJ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E8m-gk-OGp" firstAttribute="width" secondItem="YLc-Pu-Rv7" secondAttribute="width" id="Ege-rb-Pim"/>
+                            <constraint firstItem="YLc-Pu-Rv7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rev-jn-FDz"/>
+                            <constraint firstItem="YLc-Pu-Rv7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dEE-J5-et0"/>
+                            <constraint firstItem="YLc-Pu-Rv7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mDX-yU-shw"/>
+                            <constraint firstItem="E8m-gk-OGp" firstAttribute="centerX" secondItem="YLc-Pu-Rv7" secondAttribute="centerX" id="mHN-eI-4hq"/>
+                            <constraint firstItem="E8m-gk-OGp" firstAttribute="centerY" secondItem="YLc-Pu-Rv7" secondAttribute="centerY" id="q1U-2q-2Sp"/>
+                            <constraint firstItem="YLc-Pu-Rv7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.973214" id="vlJ-JX-0zB"/>
+                            <constraint firstItem="E8m-gk-OGp" firstAttribute="height" secondItem="YLc-Pu-Rv7" secondAttribute="height" multiplier="0.989679" id="wFU-YS-WMe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="quizNightLogo" destination="Iln-VV-D08" id="9Jp-z4-D4o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-281" y="121"/>
+        </scene>
+        <!--Questoes View Controller-->
+        <scene sceneID="QPx-5w-qCs">
+            <objects>
+                <viewController id="J9h-5M-swM" customClass="QuestoesViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fyn-xx-zqI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="r6Z-Ey-Env">
+                                <rect key="frame" x="0.0" y="7.5" width="320" height="533"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-Ad-8wI" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="10" width="320" height="528"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="QcA-0r-KX9">
+                                        <rect key="frame" x="0.0" y="20" width="320" height="192"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a cidade?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7q-CL-kGp">
+                                        <rect key="frame" x="80" y="247" width="160" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B3i-NK-Miy">
+                                        <rect key="frame" x="8" y="307" width="304" height="198"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X05-7n-YG7" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="42"/>
+                                                <color key="backgroundColor" red="0.16319587830000001" green="0.2888260782" blue="0.34510689970000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="ScV-hH-Y96"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Jogar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ScV-hH-Y96"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="ScV-hH-Y96"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao1Click:" destination="J9h-5M-swM" eventType="touchUpInside" id="s0z-Q9-fTn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4V-xv-NmL" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="52" width="304" height="42"/>
+                                                <color key="backgroundColor" red="0.16319587830000001" green="0.2888260782" blue="0.34510689970000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="mmX-5x-vGe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Jogar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="mmX-5x-vGe"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="mmX-5x-vGe"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao2Click:" destination="J9h-5M-swM" eventType="touchUpInside" id="SyP-oh-TcI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuN-Te-j0g" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="104" width="304" height="42"/>
+                                                <color key="backgroundColor" red="0.16319587830000001" green="0.2888260782" blue="0.34510689970000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="11A-kR-BA6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Jogar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="11A-kR-BA6"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="11A-kR-BA6"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao3Click:" destination="J9h-5M-swM" eventType="touchUpInside" id="lCQ-11-fJJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEc-aI-fWr" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="156" width="304" height="42"/>
+                                                <color key="backgroundColor" red="0.16319587830000001" green="0.2888260782" blue="0.34510689970000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="0gM-Qs-TPF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Jogar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="0gM-Qs-TPF"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="0gM-Qs-TPF"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="botao4Click:" destination="J9h-5M-swM" eventType="touchUpInside" id="QK1-YV-3I1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QcA-0r-KX9" firstAttribute="top" secondItem="f3g-Ad-8wI" secondAttribute="top" constant="20" id="8DF-Fp-NlC"/>
+                                    <constraint firstItem="H7q-CL-kGp" firstAttribute="centerX" secondItem="f3g-Ad-8wI" secondAttribute="centerX" id="ELr-IK-N97"/>
+                                    <constraint firstItem="QcA-0r-KX9" firstAttribute="centerX" secondItem="f3g-Ad-8wI" secondAttribute="centerX" id="M1d-ui-eFs"/>
+                                    <constraint firstItem="H7q-CL-kGp" firstAttribute="top" secondItem="QcA-0r-KX9" secondAttribute="bottom" constant="35" id="PEu-n9-Pq4"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="B3i-NK-Miy" secondAttribute="trailing" id="TnR-Ep-tjl"/>
+                                    <constraint firstItem="H7q-CL-kGp" firstAttribute="centerX" secondItem="f3g-Ad-8wI" secondAttribute="centerX" id="Tw1-Zx-hvb"/>
+                                    <constraint firstItem="B3i-NK-Miy" firstAttribute="leading" secondItem="f3g-Ad-8wI" secondAttribute="leadingMargin" id="WoC-ug-6YS"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="B3i-NK-Miy" secondAttribute="bottom" constant="15" id="Z8h-Rc-qtF"/>
+                                    <constraint firstItem="QcA-0r-KX9" firstAttribute="width" secondItem="f3g-Ad-8wI" secondAttribute="width" id="fgh-66-6Ay"/>
+                                    <constraint firstItem="B3i-NK-Miy" firstAttribute="top" secondItem="H7q-CL-kGp" secondAttribute="bottom" constant="30" id="tsN-Ro-MB1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f3g-Ad-8wI" firstAttribute="centerX" secondItem="r6Z-Ey-Env" secondAttribute="centerX" id="CHx-sq-yqe"/>
+                            <constraint firstItem="f3g-Ad-8wI" firstAttribute="width" secondItem="r6Z-Ey-Env" secondAttribute="width" id="IOb-v9-EEx"/>
+                            <constraint firstItem="r6Z-Ey-Env" firstAttribute="centerY" secondItem="Fyn-xx-zqI" secondAttribute="centerY" id="VNV-CZ-ZDn"/>
+                            <constraint firstItem="r6Z-Ey-Env" firstAttribute="width" secondItem="Fyn-xx-zqI" secondAttribute="width" id="WdI-PO-hf1"/>
+                            <constraint firstItem="f3g-Ad-8wI" firstAttribute="height" secondItem="r6Z-Ey-Env" secondAttribute="height" multiplier="0.989679" id="erM-BM-4uy"/>
+                            <constraint firstItem="f3g-Ad-8wI" firstAttribute="centerY" secondItem="r6Z-Ey-Env" secondAttribute="centerY" id="fqS-VG-MBZ"/>
+                            <constraint firstItem="r6Z-Ey-Env" firstAttribute="height" secondItem="Fyn-xx-zqI" secondAttribute="height" multiplier="0.973214" id="laJ-1I-hoA"/>
+                            <constraint firstItem="r6Z-Ey-Env" firstAttribute="centerX" secondItem="Fyn-xx-zqI" secondAttribute="centerX" id="xRd-Oz-fKA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SWi-wg-PPs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eVJ-do-vjg"/>
+                    <connections>
+                        <outlet property="dicaImg" destination="QcA-0r-KX9" id="pVU-4H-6LG"/>
+                        <outlet property="stackBotoes" destination="B3i-NK-Miy" id="xF7-bO-PdE"/>
+                        <segue destination="2yr-bf-DWk" kind="show" identifier="fimDeJogo" id="z5n-vj-9Gs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTh-zr-Xpe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="121"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="sW4-Ca-iBp">
+            <objects>
+                <viewController id="2yr-bf-DWk" customClass="GameOverViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b5r-KG-EKB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="9jW-Mx-P65">
+                                <rect key="frame" x="0.0" y="7.5" width="320" height="533"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GO-Fr-dRS" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="10" width="320" height="528"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fim de jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01G-SM-7uL">
+                                        <rect key="frame" x="49" y="44" width="222" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pontos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH3-h4-dPH">
+                                        <rect key="frame" x="93.5" y="353.5" width="133" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwI-If-0GO">
+                                        <rect key="frame" x="8" y="144.5" width="304" height="239"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dwI-If-0GO" firstAttribute="centerY" secondItem="5GO-Fr-dRS" secondAttribute="centerY" id="4zH-gt-fcC"/>
+                                    <constraint firstItem="01G-SM-7uL" firstAttribute="centerX" secondItem="5GO-Fr-dRS" secondAttribute="centerX" id="KTx-HI-XFy"/>
+                                    <constraint firstItem="dwI-If-0GO" firstAttribute="leading" secondItem="5GO-Fr-dRS" secondAttribute="leading" constant="8" id="KaV-bG-b0S"/>
+                                    <constraint firstAttribute="trailing" secondItem="dwI-If-0GO" secondAttribute="trailing" constant="8" id="abt-kZ-re8"/>
+                                    <constraint firstItem="01G-SM-7uL" firstAttribute="top" secondItem="5GO-Fr-dRS" secondAttribute="top" constant="44" id="coh-NM-6ye"/>
+                                    <constraint firstItem="dH3-h4-dPH" firstAttribute="centerX" secondItem="5GO-Fr-dRS" secondAttribute="centerX" id="hSy-Rz-Mnk"/>
+                                    <constraint firstItem="dH3-h4-dPH" firstAttribute="top" secondItem="dwI-If-0GO" secondAttribute="bottom" constant="-30" id="tqd-0s-fCc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqk-EP-t5N" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="496" width="320" height="42"/>
+                                <color key="backgroundColor" red="0.16319587830000001" green="0.2888260782" blue="0.34510689970000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YRS-wL-8o3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="JOGAR NOVAMENTE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YRS-wL-8o3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="YRS-wL-8o3"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="bbU-1h-MIX" kind="unwind" unwindAction="voltandoProCaWithSegue:" id="UV2-Om-zcD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9jW-Mx-P65" firstAttribute="width" secondItem="b5r-KG-EKB" secondAttribute="width" id="DpZ-Pm-Gvu"/>
+                            <constraint firstItem="9jW-Mx-P65" firstAttribute="centerX" secondItem="b5r-KG-EKB" secondAttribute="centerX" id="GUp-Zb-BIq"/>
+                            <constraint firstItem="zqk-EP-t5N" firstAttribute="trailing" secondItem="5GO-Fr-dRS" secondAttribute="trailing" id="M9T-91-h1T"/>
+                            <constraint firstItem="5GO-Fr-dRS" firstAttribute="width" secondItem="9jW-Mx-P65" secondAttribute="width" id="Q3w-Hx-8g7"/>
+                            <constraint firstItem="9jW-Mx-P65" firstAttribute="centerY" secondItem="b5r-KG-EKB" secondAttribute="centerY" id="YJV-2p-a42"/>
+                            <constraint firstItem="5GO-Fr-dRS" firstAttribute="centerX" secondItem="9jW-Mx-P65" secondAttribute="centerX" id="c2a-Be-u3S"/>
+                            <constraint firstItem="5GO-Fr-dRS" firstAttribute="centerY" secondItem="9jW-Mx-P65" secondAttribute="centerY" id="czk-sz-Jwm"/>
+                            <constraint firstItem="9jW-Mx-P65" firstAttribute="height" secondItem="b5r-KG-EKB" secondAttribute="height" multiplier="0.973214" id="fYn-xb-A64"/>
+                            <constraint firstItem="zqk-EP-t5N" firstAttribute="bottom" secondItem="5GO-Fr-dRS" secondAttribute="bottom" id="l0p-I9-qkf"/>
+                            <constraint firstItem="5GO-Fr-dRS" firstAttribute="height" secondItem="9jW-Mx-P65" secondAttribute="height" multiplier="0.989679" id="nx7-BD-peA"/>
+                            <constraint firstItem="zqk-EP-t5N" firstAttribute="leading" secondItem="5GO-Fr-dRS" secondAttribute="leading" id="xUp-OK-LEP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QRH-Ul-KDF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0V4-fL-4Sx"/>
+                    <connections>
+                        <outlet property="potuacaoLabel" destination="dwI-If-0GO" id="spx-Lj-A5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cz2-7a-hkN" sceneMemberID="firstResponder"/>
+                <exit id="bbU-1h-MIX" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1160.625" y="120.4225352112676"/>
         </scene>
     </scenes>
     <resources>
