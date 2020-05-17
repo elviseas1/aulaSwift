@@ -15,6 +15,7 @@
 		1420331024709D3F00509E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420330E24709D3F00509E2C /* LaunchScreen.storyboard */; };
 		1420331B24709D4000509E2C /* quizNightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420331A24709D4000509E2C /* quizNightTests.swift */; };
 		1420332624709D4000509E2C /* quizNightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420332524709D4000509E2C /* quizNightUITests.swift */; };
+		142033342470B14700509E2C /* BotaoComBorda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142033332470B14700509E2C /* BotaoComBorda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1420332124709D4000509E2C /* quizNightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizNightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1420332524709D4000509E2C /* quizNightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizNightUITests.swift; sourceTree = "<group>"; };
 		1420332724709D4000509E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142033332470B14700509E2C /* BotaoComBorda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoComBorda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1420330C24709D3F00509E2C /* Assets.xcassets */,
 				1420330E24709D3F00509E2C /* LaunchScreen.storyboard */,
 				1420331124709D3F00509E2C /* Info.plist */,
+				142033332470B14700509E2C /* BotaoComBorda.swift */,
 			);
 			path = quizNight;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				1420330824709D3E00509E2C /* ViewController.swift in Sources */,
 				1420330424709D3E00509E2C /* AppDelegate.swift in Sources */,
+				142033342470B14700509E2C /* BotaoComBorda.swift in Sources */,
 				1420330624709D3E00509E2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
